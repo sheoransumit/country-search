@@ -1,0 +1,13 @@
+body{
+  padding: 20px;
+}
+.country-table{ 
+  overflow-y: scroll; 
+  height: 90vh;
+}
+@media  (max-width: 768px) {
+  .country-table{ 
+    overflow-y: scroll; 
+    height: 80vh;
+  }
+}
