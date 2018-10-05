@@ -1,8 +1,8 @@
 'use strict';
 
 // Define the `phonecatApp` module
-angular.module('countrycatApp', [
+angular.module('usercatApp', [
   'ngRoute',
   'core',
-  'countryList'
+  'userList'
 ]);

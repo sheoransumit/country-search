@@ -1,0 +1,67 @@
+
+<div class="container-fluid pdt-20">
+
+  <div class="row">
+    <div class="col-sm-12">
+    <h2>#1</h2>      
+      <img id="disabledthumbnail" src="{{$ctrl.users.thumbnail}}" alt="Thumbnail" height="42" width="42">
+
+      <form>
+        <div class="form-row">
+        <fieldset disabled>
+          <div class="form-group col-sm-12 col-md-6 col-lg-4">
+            <label for="disabledGenderInput">Gender</label>
+            <input type="text" id="disabledGenderInput" class="form-control" placeholder="Disabled gender" value="{{$ctrl.users.gender}}">
+          </div>
+          <div class="form-group col-sm-12 col-md-6 col-lg-4">
+            <label for="disabledPCInput">Postcode</label>
+            <input type="text" id="disabledPCInput" class="form-control" placeholder="Disabled postcode" value="{{$ctrl.users.postcode}}">
+          </div>
+          <div class="form-group col-sm-12 col-md-6 col-lg-4">
+            <label for="disabledEmailInput">Email</label>
+            <input type="email" id="disabledEmailInput" class="form-control" placeholder="Disabled email" value="{{$ctrl.users.email}}">
+          </div>
+          <div class="form-group col-sm-12 col-md-6 col-lg-4">
+            <label for="disabledUsernameInput">Username</label>
+            <input type="text" id="disabledUsernameInput" class="form-control" placeholder="Disabled username" value="{{$ctrl.users.username}}">
+          </div>
+        </fieldset>
+        <div class="row" style="padding-left: 30px;">
+            <button id="LRUButton" type="submit" class="btn btn-primary">Load random user</button>
+        </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+    <h2>#2</h2>
+      <form >
+        <div class="form-row">
+        <fieldset>
+          <div class="form-group col-sm-12 col-md-6 col-lg-4">
+            <label for="disabledNumbInput">Digit</label>
+            <input type="number" id="disabledNumbInput" class="form-control" placeholder="Enter Number" ng-model="$ctrl.digit">
+          </div>
+        </fieldset>
+        <div class="row" style="padding-left: 30px;">
+          <button id="LRUTDButton" type="submit" class="btn btn-primary">load random user table data</button>
+        </div>
+        </div>
+      </form>
+
+      <table id="table_id" class="display">
+          <thead>
+              <tr>
+                  <th>gender</th>
+                  <th>postcode</th>
+                  <th>email</th>
+                  <th>username</th>
+                  <th>phone</th>
+              </tr>
+          </thead>
+      </table>
+    </div>
+  </div>
+</div>

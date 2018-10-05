@@ -1,14 +1,14 @@
 'use strict';
 
 angular.
-  module('countrycatApp').
+  module('usercatApp').
   config(['$locationProvider' ,'$routeProvider',
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
       $routeProvider.
         when('/', {
-          template: '<country-list></country-list>'
+          template: '<user-list></user-list>'
         }).
         otherwise('/');
     }
